@@ -17,9 +17,9 @@ namespace FontSizeAssignment
             InitializeComponent();
         }
 
-        private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+        private void slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            label1.Text = $"Font Size:{e.NewValue}";
+            label1.Text = "Font Size: " + Math.Truncate(e.NewValue);
             label2.FontSize = e.NewValue;
         }
     }

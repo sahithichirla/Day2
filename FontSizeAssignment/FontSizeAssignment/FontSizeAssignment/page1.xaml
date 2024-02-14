@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Font Size : 0" x:Name="label1"/>
-            <Slider Minimum="16" Maximum="50" x:Name="slider" ValueChanged="Slider_ValueChanged"/>
+            <Slider  Maximum="50" Minimum="16" x:Name="slider" ValueChanged="slider_ValueChanged"/>
             <Label Text="Hello" x:Name="label2"/>
         </StackLayout>
     </ContentPage.Content>
