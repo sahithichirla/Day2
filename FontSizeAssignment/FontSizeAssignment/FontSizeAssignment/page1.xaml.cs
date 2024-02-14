@@ -5,26 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Xamarin.Forms.Xaml;
 
-namespace xamlSlider
+namespace FontSizeAssignment
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class page1 : ContentPage
     {
-        public Page1()
+        public page1()
         {
             InitializeComponent();
-            slider1.Value = 0.5;
-            
-
         }
+
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            label1.Text = string.Format("Value is {0:F2}", e.NewValue);
-
-       }
-
+            label1.Text = $"Font Size:{e.NewValue}";
+            label2.FontSize = e.NewValue;
+        }
     }
 }

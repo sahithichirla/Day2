@@ -6,10 +6,5 @@
         <Label Text="hello" x:Name="label1"></Label>
         <Slider ValueChanged="Slider_ValueChanged" x:Name="slider1"></Slider>
 
-        <Label Text="Entered Text: " x:Name="label2"></Label>
-        <Entry Placeholder="Enter text" TextChanged="Entry_TextChanged" />
-
-        <Slider Minimum="16" Maximum="50" x:Name="slider2" ValueChanged="Slider2_ValueChanged"/>
-        <Label Text="Font size" x:Name="label3" />
     </StackLayout>
 </ContentPage>
