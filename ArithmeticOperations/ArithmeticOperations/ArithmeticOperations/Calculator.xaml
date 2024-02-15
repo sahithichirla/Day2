@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ArithmeticOperations"
+             x:Class="ArithmeticOperations.Calculator">
+    <ContentPage.BindingContext>
+        <local:CalViewModel> </local:CalViewModel>
+    </ContentPage.BindingContext>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Entry Placeholder="First Number" Text="{Binding Num1}"></Entry>
+        <Entry Placeholder="Second Number" Text="{Binding Num2}"></Entry>
+        <Label Text="{Binding Result}"></Label>
+        <Button Text="Add" Command="{Binding AddCommand}"></Button>
+        <Button Text="Subtract" Command="{Binding SubtractCommand}"></Button>
+        <Button Text="Multiply" Command="{Binding MultiplyCommand}"></Button>
+        <Button Text="Divide" Command="{Binding DivideCommand}"></Button>
+
+    </StackLayout>
+</ContentPage>
