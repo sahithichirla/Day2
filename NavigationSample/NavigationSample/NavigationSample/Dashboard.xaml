@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Dashboard" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationSample.Dashboard">
+   
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+        <Label Text="DashBoard Page"></Label>
+        <Button Text="Back to Home" Clicked="Button_Clicked"></Button>
+
+    </StackLayout>
+</ContentPage>
