@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StackLayoutExercise2.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HeightRequest="300" WidthRequest="300">
+                <Image Source="../images/image1.jpg" Aspect="AspectFit" IsVisible="True"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="10" BackgroundColor="White">
+                <Button Text="Like" TextColor="DeepSkyBlue" HorizontalOptions="Fill" BackgroundColor="White"/>
+                <Button Text="Comment" TextColor="DeepSkyBlue" HorizontalOptions="Fill" BackgroundColor="White"/>
+                <Button Text="Share" TextColor="DeepSkyBlue" HorizontalOptions="Fill" BackgroundColor="White"/>
+            </StackLayout>
+
+            <Label Text="700 Likes" TextColor="Black" FontAttributes="Bold" Padding="10" />
+            <Label Text="Caption" TextColor="Black" Padding="10" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
