@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListViewDemo.SwitchDemo">
+    <ContentPage.Content>
+        <!-- Switch -->
+        
+        <!--<StackLayout>
+            <Switch IsToggled="True" Toggled="Switch_Toggled"></Switch>
+            <Label Text="Hello World" x:Name="l1"></Label>
+        </StackLayout>-->
+        
+        <!-- Stepper-->
+        
+        <!--<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Stepper x:Name="s1"></Stepper>
+            <Label Text="{Binding Source={x:Reference s1},Path=Value}"></Label>
+        </StackLayout>-->
+        
+        <!-- Entry Properties-->
+
+        <!--<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+<Entry IsPassword="True" Placeholder="Enter your passsword">
+</Entry>
+<Entry Keyboard="Numeric" Placeholder="Enter phone Number"></Entry>
+<Editor Text="Hello"></Editor>
+</StackLayout>-->
+        
+        
+        <StackLayout></StackLayout>
+    </ContentPage.Content>
+</ContentPage>
