@@ -17,6 +17,13 @@ namespace ListViewDemo
 		public ContactPage ()
 		{
 			InitializeComponent ();
+            list1.ItemsSource = new List<Contact>{
+
+                new Contact { Name = "abc", ImageUrl = "http://lorempixel.com/100/100/people/1",Status = "Hey, let's talk!" },
+
+                new Contact { Name = "John", ImageUrl = "http://lorempixel.com/100/100/people/2", Status = "Hey, let's talk!" }
+
+            };
         }
         public class Contact
 
@@ -32,14 +39,6 @@ namespace ListViewDemo
 
         private void List1_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            list1.ItemsSource = new List
-           <Contact>{
-
-                new Contact { Name = "abc", ImageUrl = "http://lorempixel.com/100/100/people/1",Status = "Hey, let's talk!" },
-
-                new Contact { Name = "John", ImageUrl = "http://lorempixel.com/100/100/people/2", Status = "Hey, let's talk!" }
-
-            };
         }
     }
 }
